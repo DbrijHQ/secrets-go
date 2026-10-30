@@ -1,0 +1,298 @@
+{
+  "token": "dbs_0f1e2d3c4b5a69788796a5b4c3d2e1f0_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_z9mfpckh6s7xnfvdvpdcr1yfpjy4k6sqr3bjemhpbwb642gfcaq0_azhqsr",
+  "bundle": {
+    "project": {
+      "id": "p",
+      "slug": "shop",
+      "name": "Shop"
+    },
+    "environment": {
+      "id": "env-1",
+      "slug": "production",
+      "name": "Production",
+      "version": 3,
+      "keyVersion": 1,
+      "protected": false
+    },
+    "access": "developer",
+    "holder": {
+      "kind": "machine",
+      "machineId": "m",
+      "credentialId": "0f1e2d3c-4b5a-6978-8796-a5b4c3d2e1f0",
+      "encryptedPrivateKey": "HB04D+WoWTvDfqqC44T1T0ZqWx4tejncg7FUZKT50pBtm0yRrLrnVYEMupDhmgnJwX7EPknc70kj0RrX42A3cdCPp9SWItN8MULHvjSHQ1z93Bs4KI22MeGuKN0jrvBLa/LLsI1qHwvpBHstQnVrs36lnmhxsiYfbpxtNJHyAVgtS4w5gjzlEYFLUbAoymsZUcUckN563Kfgw2kO0e5gbXWlu0tx2YpCLTsztIjoGyb9mRARlXR2z9lPUnb3TXqWuSe9C3yZ32MzUeFYbatcwl6Gg+La90q7qLUpc4LGDAWj35iUcYuO3Q8sN1z+ZX3PT45KcOD0huvA54TTZOKS2sUKFWEzqEdavn9Zja1oNohFU3/oXkbBrUayPrt1y0VDoRTdvj89zLvEg7pdEQY77WQ7831q/SN78P33JWDXFLmhKvUvI4GHpegn0HC2hUHsXhCC9FlzU0nA0m3QvlZEbQDMv2Gg7utNCg51yW0M5Vud9ugYoo63njfNjd5bQgnBCJ/dR7KyMCt9Q4pGO+9ZNgkk2MKEbcMF5Nvqb26eGXRAXWdQ1aai+HNoliWaJk0Pr5ykzLuGdTP097U0eUpN2DsIyupcVdntdCiMMj2JXFZHdQzUmWuuRuhgV0596La7Ktzp9NUFF7N1OpocdIINKMeqZxZGKAzek6aoMcC++lR6gEohxQz7vQcCJZRWWnEfY0Rj1DPKu2C8a+vbxbR43xi0JawSq/2ykeIOwUUfEKqb2+ft/KI2zGlLBRUM/DtCcE3lcY32uwPqFgKt8PX3RegStspw76+AwfdWOyNrkzLOgoKzdRvgMxl+/Fis98GbgkQznBl3daVhgxkEg1chJhFDEkZ5JN/OwxJEAUYvb1zI/OGR/Jdi1m792erhZPD0rl5qhuERx3r58ANLrD7S2a2FImMau4neaN0hkJvOhzAY0UwVLF1PIge42raMz1aAaQ2FnHDdFqWW2rGF0bPdlDPE0dgl94zPlDVviVt6RdnAZWkkG4GLOhtsbC4x7Zu1h6rgWA5g+qRXtn6GwTCQeMJDIkQ1iRYeuczTL4aRUpql9EZa8eepzIyUjBBSyaD6sr9R+1nUjZBdjVnh3bfAe//PJ/C6l6iVoAF9CvImxLCmBAiJ62QxvxPcQQxYy8rMeccOZQUUNbbJayvKqe07ba4uBYWqHDXkqPzbpEjzjAMtH7Y6hzS9B9oM6+wtsgDaHjorCvXoMJ21qRNbJhadQ2sV8X/iUmBObqeyQzP+r7noT+Rhnp/mvHZ7yW7SFOIGIcev/GenQuTinKUg7rwVj5qtL+prfFZTbJs8RhmToJPb9zs13y6gUwdb20cn1C9VIW5HY3XTZg/gbeXWKWSdxwC7a2mrxRIOumMgXPB7Qtspw1So5JLNUwOMzDSHbygeau5k5Q0cGR1+j16NnoWHHkHa2+hdbs+RQ10nRpPNGZML36eDneRvqunC9/k5+tqneRKoCnde7jmImdwgORQ2L77B6lUHAFb3gJaUA1CdxXyILITqm1GsMohzwHAFqo/scocFqIR9whpR3/0yKWsVMrIbgHva6tlNcAmq+i4GRW5MtD7INNKxoE39SWfmS3LwIOm3y3k5ulzpwS0INQJD2yhrT4lLEsURXpikdTBTq2av2pYfMhest4BeLEA=",
+      "keySalt": "lcpBJKklGJrh46e3N1DlZQ==",
+      "algo": "v1:aes-256-gcm+rsa-oaep-256"
+    },
+    "wraps": [
+      {
+        "keyVersion": 1,
+        "wrapped": "VpN9YwxMYSL9IpBwyCbITNmoh4WJ8zpkCJaXnJXCH8l5cC8bebTv9VEIFDv1gKE4BT1FC1HiFodI3nDFzWb+6xHlRdqCzJe8l6wXIvLBq6/6PQ8EguOsz6DWW0wE9UE2Q05TBv0FBijT9YuJP9e33QnDUTijNBXaYombzV0fJXw2gBAOGuRswbmu7vwBlRqdbHn13mpxK6SAjW9aAsB5yvcZlbyZbkzL0VP2IjLfkPIeubydc+izf4XjHE+4iqpitg/A/6WEY5rUG8qXdm2gVaMKecUmMenHRrhR2Vlj2tLG9lvwSYNqvAlPoG7iLO2pdujwsCGTS/a34X0awYStNg==",
+        "algo": "v1:aes-256-gcm+rsa-oaep-256"
+      }
+    ],
+    "folders": [
+      {
+        "id": "folder-api",
+        "path": "/api"
+      }
+    ],
+    "items": [
+      {
+        "id": "item-1",
+        "folderId": null,
+        "folderPath": "/",
+        "key": "DATABASE_URL",
+        "type": "shared",
+        "ownerUserId": null,
+        "version": 1,
+        "keyVersion": 1,
+        "ciphertext": "B2flwC53RH3oh0Z+CeDnZyf7aJ5gna1o1Ok86sOoSecP8Y6rwnIHSrwG6RziLLGSHZQCe7EFxKJURkn3PiVor0g=",
+        "iv": "bycZrLPrBFBoB6pS"
+      },
+      {
+        "id": "item-2",
+        "folderId": null,
+        "folderPath": "/",
+        "key": "UNICODE",
+        "type": "shared",
+        "ownerUserId": null,
+        "version": 1,
+        "keyVersion": 1,
+        "ciphertext": "kwxlfG/Rpmg4LRw2cI8z0iQLW7lnrkg9Co7NAppC7nzmZArjl8coAkiAuafzIgd4",
+        "iv": "dZOFx/kZTGtLz+Lz"
+      },
+      {
+        "id": "item-3",
+        "folderId": "folder-api",
+        "folderPath": "/api",
+        "key": "API_ONLY",
+        "type": "shared",
+        "ownerUserId": null,
+        "version": 1,
+        "keyVersion": 1,
+        "ciphertext": "t4o/kFyx6w6FPF/7wAnjf5e8EKthAQUP9epreclos07olXEv",
+        "iv": "GrBnpwzuE/sxWeNB"
+      }
+    ],
+    "etag": "W/\"fixture\""
+  },
+  "expected": {
+    "/:DATABASE_URL": "postgres://user:pass@db/app",
+    "/:UNICODE": "naira ₦ and emoji 🔑",
+    "/api:API_ONLY": "only in /api"
+  },
+  "notes": {
+    "DATABASE_URL": "primary"
+  },
+  "references": {
+    "bundle": {
+      "project": {
+        "id": "p",
+        "slug": "shop",
+        "name": "Shop"
+      },
+      "environment": {
+        "id": "env-1",
+        "slug": "production",
+        "name": "Production",
+        "version": 3,
+        "keyVersion": 1,
+        "protected": false
+      },
+      "access": "developer",
+      "holder": {
+        "kind": "machine",
+        "machineId": "m",
+        "credentialId": "0f1e2d3c-4b5a-6978-8796-a5b4c3d2e1f0",
+        "encryptedPrivateKey": "HB04D+WoWTvDfqqC44T1T0ZqWx4tejncg7FUZKT50pBtm0yRrLrnVYEMupDhmgnJwX7EPknc70kj0RrX42A3cdCPp9SWItN8MULHvjSHQ1z93Bs4KI22MeGuKN0jrvBLa/LLsI1qHwvpBHstQnVrs36lnmhxsiYfbpxtNJHyAVgtS4w5gjzlEYFLUbAoymsZUcUckN563Kfgw2kO0e5gbXWlu0tx2YpCLTsztIjoGyb9mRARlXR2z9lPUnb3TXqWuSe9C3yZ32MzUeFYbatcwl6Gg+La90q7qLUpc4LGDAWj35iUcYuO3Q8sN1z+ZX3PT45KcOD0huvA54TTZOKS2sUKFWEzqEdavn9Zja1oNohFU3/oXkbBrUayPrt1y0VDoRTdvj89zLvEg7pdEQY77WQ7831q/SN78P33JWDXFLmhKvUvI4GHpegn0HC2hUHsXhCC9FlzU0nA0m3QvlZEbQDMv2Gg7utNCg51yW0M5Vud9ugYoo63njfNjd5bQgnBCJ/dR7KyMCt9Q4pGO+9ZNgkk2MKEbcMF5Nvqb26eGXRAXWdQ1aai+HNoliWaJk0Pr5ykzLuGdTP097U0eUpN2DsIyupcVdntdCiMMj2JXFZHdQzUmWuuRuhgV0596La7Ktzp9NUFF7N1OpocdIINKMeqZxZGKAzek6aoMcC++lR6gEohxQz7vQcCJZRWWnEfY0Rj1DPKu2C8a+vbxbR43xi0JawSq/2ykeIOwUUfEKqb2+ft/KI2zGlLBRUM/DtCcE3lcY32uwPqFgKt8PX3RegStspw76+AwfdWOyNrkzLOgoKzdRvgMxl+/Fis98GbgkQznBl3daVhgxkEg1chJhFDEkZ5JN/OwxJEAUYvb1zI/OGR/Jdi1m792erhZPD0rl5qhuERx3r58ANLrD7S2a2FImMau4neaN0hkJvOhzAY0UwVLF1PIge42raMz1aAaQ2FnHDdFqWW2rGF0bPdlDPE0dgl94zPlDVviVt6RdnAZWkkG4GLOhtsbC4x7Zu1h6rgWA5g+qRXtn6GwTCQeMJDIkQ1iRYeuczTL4aRUpql9EZa8eepzIyUjBBSyaD6sr9R+1nUjZBdjVnh3bfAe//PJ/C6l6iVoAF9CvImxLCmBAiJ62QxvxPcQQxYy8rMeccOZQUUNbbJayvKqe07ba4uBYWqHDXkqPzbpEjzjAMtH7Y6hzS9B9oM6+wtsgDaHjorCvXoMJ21qRNbJhadQ2sV8X/iUmBObqeyQzP+r7noT+Rhnp/mvHZ7yW7SFOIGIcev/GenQuTinKUg7rwVj5qtL+prfFZTbJs8RhmToJPb9zs13y6gUwdb20cn1C9VIW5HY3XTZg/gbeXWKWSdxwC7a2mrxRIOumMgXPB7Qtspw1So5JLNUwOMzDSHbygeau5k5Q0cGR1+j16NnoWHHkHa2+hdbs+RQ10nRpPNGZML36eDneRvqunC9/k5+tqneRKoCnde7jmImdwgORQ2L77B6lUHAFb3gJaUA1CdxXyILITqm1GsMohzwHAFqo/scocFqIR9whpR3/0yKWsVMrIbgHva6tlNcAmq+i4GRW5MtD7INNKxoE39SWfmS3LwIOm3y3k5ulzpwS0INQJD2yhrT4lLEsURXpikdTBTq2av2pYfMhest4BeLEA=",
+        "keySalt": "lcpBJKklGJrh46e3N1DlZQ==",
+        "algo": "v1:aes-256-gcm+rsa-oaep-256"
+      },
+      "wraps": [
+        {
+          "keyVersion": 1,
+          "wrapped": "VpN9YwxMYSL9IpBwyCbITNmoh4WJ8zpkCJaXnJXCH8l5cC8bebTv9VEIFDv1gKE4BT1FC1HiFodI3nDFzWb+6xHlRdqCzJe8l6wXIvLBq6/6PQ8EguOsz6DWW0wE9UE2Q05TBv0FBijT9YuJP9e33QnDUTijNBXaYombzV0fJXw2gBAOGuRswbmu7vwBlRqdbHn13mpxK6SAjW9aAsB5yvcZlbyZbkzL0VP2IjLfkPIeubydc+izf4XjHE+4iqpitg/A/6WEY5rUG8qXdm2gVaMKecUmMenHRrhR2Vlj2tLG9lvwSYNqvAlPoG7iLO2pdujwsCGTS/a34X0awYStNg==",
+          "algo": "v1:aes-256-gcm+rsa-oaep-256"
+        }
+      ],
+      "folders": [
+        {
+          "id": "folder-api",
+          "path": "/api"
+        },
+        {
+          "id": "folder-shared",
+          "path": "/shared"
+        }
+      ],
+      "items": [
+        {
+          "id": "ref-production-0",
+          "folderId": null,
+          "folderPath": "/",
+          "key": "DB_USER",
+          "type": "shared",
+          "ownerUserId": null,
+          "version": 1,
+          "keyVersion": 1,
+          "ciphertext": "e9BRvDawFBBeHSibh86o2UqyuBaRmSKImvr1",
+          "iv": "L+TE79VnW/ftxp08"
+        },
+        {
+          "id": "ref-production-1",
+          "folderId": null,
+          "folderPath": "/",
+          "key": "DATABASE_URL",
+          "type": "shared",
+          "ownerUserId": null,
+          "version": 1,
+          "keyVersion": 1,
+          "ciphertext": "xw3ospHGQKRQ+wcsYkoQse12D2Hb2mWaGG373hmlo20uphGQJCbq5KB9eTBVJe7aorLJQdcZFS6SfnKrks/05ucoH9nu7PmNRKB539JCHC7avlB6K3iMZtl+dz6m",
+          "iv": "BsYCkrelqO8VOLHW",
+          "refs": [
+            {
+              "environment": null,
+              "path": "/",
+              "key": "DB_USER"
+            },
+            {
+              "environment": null,
+              "path": "/shared",
+              "key": "DB_PASS"
+            },
+            {
+              "environment": "staging",
+              "path": "/db",
+              "key": "HOST"
+            }
+          ]
+        },
+        {
+          "id": "ref-production-2",
+          "folderId": null,
+          "folderPath": "/",
+          "key": "BROKEN",
+          "type": "shared",
+          "ownerUserId": null,
+          "version": 1,
+          "keyVersion": 1,
+          "ciphertext": "qK6wmdxCb43ZnaqqaXRyn0cRVgu9dRVdslPp+OCISvHpXv2c7nrh9Kk=",
+          "iv": "CB6HYAG7zPBjgfWX",
+          "refs": [
+            {
+              "environment": null,
+              "path": "/",
+              "key": "NOT_HERE"
+            }
+          ]
+        },
+        {
+          "id": "ref-production-3",
+          "folderId": null,
+          "folderPath": "/",
+          "key": "LITERAL",
+          "type": "shared",
+          "ownerUserId": null,
+          "version": 1,
+          "keyVersion": 1,
+          "ciphertext": "/CtLnzCO/5+n44UWrNissxfU3tNmDIOmnh2AwiGFZXJK5PCRImF/imRGCiOg89Y=",
+          "iv": "5UC+FJ3PDo0BWwmL"
+        },
+        {
+          "id": "ref-production-4",
+          "folderId": "folder-shared",
+          "folderPath": "/shared",
+          "key": "DB_PASS",
+          "type": "shared",
+          "ownerUserId": null,
+          "version": 1,
+          "keyVersion": 1,
+          "ciphertext": "l4hlgbZDQwNHNu1iSkqYlTUTIrbR4PtKysJRfCqP",
+          "iv": "0AzS/7fK9RREgYql",
+          "importedInto": "/",
+          "importRank": 500
+        },
+        {
+          "id": "ref-production-5",
+          "folderId": "folder-shared",
+          "folderPath": "/shared",
+          "key": "DB_USER",
+          "type": "shared",
+          "ownerUserId": null,
+          "version": 1,
+          "keyVersion": 1,
+          "ciphertext": "wmEVBSTknW9SXHlvNGzVnwmAKut5mWlNr0kUDDIyn9o5aeqQRBqHN3hBow==",
+          "iv": "5dRy+QUWuJn8caL0",
+          "importedInto": "/",
+          "importRank": 500
+        },
+        {
+          "id": "ref-production-6",
+          "folderId": "folder-api",
+          "folderPath": "/api",
+          "key": "ONLY_FOR_TEMPLATES",
+          "type": "shared",
+          "ownerUserId": null,
+          "version": 1,
+          "keyVersion": 1,
+          "ciphertext": "KQToGk/lg1MLmkD3dd1d+KmWjXnvpU5LrzzF316r9AyNoozxUw==",
+          "iv": "nFPQxEttav74RDbC",
+          "viaReference": true
+        }
+      ],
+      "etag": "W/\"references\"",
+      "imports": [
+        {
+          "folderPath": "/",
+          "imports": [
+            "/shared"
+          ]
+        }
+      ],
+      "referenced": [
+        {
+          "environment": {
+            "id": "env-2",
+            "slug": "staging",
+            "name": "Staging",
+            "keyVersion": 1
+          },
+          "wraps": [
+            {
+              "keyVersion": 1,
+              "wrapped": "LJKScR+dlh03YyvzP+yY0II3KH/wPGZOlhMpsX6nT/ISzaLhDeXcpWoFkVwsmNz3IJ7Xmz0WOdKY1wkmMvhi+PZPA16YBGoVlAZSFzWQee+S8TOWEumBsPlK9gUbGV3HWdJN2AqasrsR6iVhOumNLyIBh+gLT7gWPxc8iaEMlIdx6O3XyWTG77QnoiEMDeGFcJ8vmPNIN3fO+Ldh3XrPtG48abMgaXHkqUhX9xxGPE6r23aWxg/JXCgk+3TYw6+muQvB5QLSyXrepnl9KFPjkmyddHGjHjBIvFaOxraV8AqcKZgTgXEzw36kGQX41f7UQdU5igh1O0EBFH15TXkIBQ==",
+              "algo": "v1:aes-256-gcm+rsa-oaep-256"
+            }
+          ],
+          "items": [
+            {
+              "id": "ref-staging-0",
+              "folderId": "folder-db",
+              "folderPath": "/db",
+              "key": "HOST",
+              "type": "shared",
+              "ownerUserId": null,
+              "version": 1,
+              "keyVersion": 1,
+              "ciphertext": "fWvItlYjTmu7fCJD9YMrbwL3NabWRhh/GTEZf+CvYbsiGOVUP0+USp/eVg==",
+              "iv": "QrSpBKh5TMxYM0vP"
+            }
+          ]
+        }
+      ]
+    },
+    "paths": [
+      "/"
+    ],
+    "values": {
+      "DB_PASS": "p$1&ss",
+      "DB_USER": "app",
+      "DATABASE_URL": "postgres://app:p$1&ss@db.staging.internal/app?x=$1",
+      "LITERAL": "echo ${HOME} ${DB_USER}"
+    },
+    "problems": [
+      "BROKEN could not be filled in: NOT_HERE is not there"
+    ],
+    "collisions": []
+  }
+}
