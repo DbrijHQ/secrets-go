@@ -30,6 +30,25 @@ secrets.InjectEnv(true) // or put every value into the process environment
 
 Only the first two parts of a token are ever sent to Dbrij. Go 1.24 or newer, standard library only, safe for use by several goroutines.
 
+## Key management
+
+Use a Dbrij Secrets Key management key with the same machine token, once the key's page gives this machine the operations it needs. The key never leaves Dbrij.
+
+```go
+keys := client.Keys()
+ct, err := keys.Encrypt(ctx, keyID, []byte("a customer BVN"), map[string]string{"table": "customers"})
+bvn, err := keys.Decrypt(ctx, keyID, ct.Ciphertext, map[string]string{"table": "customers"})
+
+// Larger than 4 KB: a data key from Dbrij, AES 256 GCM on this server.
+sealed, err := keys.EncryptLarge(ctx, keyID, bigFile, nil)
+back, err := keys.DecryptLarge(ctx, keyID, sealed, nil)
+
+sig, err := keys.Sign(ctx, signingKeyID, manifest)
+ok, err := keys.Verify(ctx, signingKeyID, manifest, sig.Signature, 0)
+```
+
+Also `NewDataKey`, `Reencrypt`, `Mac`, `VerifyMac` and `PublicKey`. Decrypting needs the same context the value was encrypted with. Envelopes from `EncryptLarge` open in the Node and Python SDKs too.
+
 ## Options
 
 | Field | Default |
