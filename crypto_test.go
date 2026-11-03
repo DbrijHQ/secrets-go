@@ -56,10 +56,13 @@ func TestATokenCutShortIsCaught(t *testing.T) {
 	tok, _ := ParseToken(f.Token)
 	bearer, _ := tok.Bearer()
 	for input, want := range map[string]string{
-		f.Token[:len(f.Token)-1]:   "cut short",
-		bearer:                     "incomplete",
-		"dbs_" + tok.CredentialHex: "missing its key half",
-		"ghp_x":                    "not a Dbrij Secrets token",
+		f.Token[:len(f.Token)-1]:                    "cut short",
+		bearer:                                      "incomplete",
+		"dbs_" + tok.CredentialHex:                  "missing its key half",
+		"ghp_x":                                     "not a Dbrij Secrets token",
+		"dbsk_" + strings.Repeat("0a", 12):          "Storage access key ID, not a Secrets login key",
+		"dbss_" + strings.Repeat("0a", 24):          "Storage secret key",
+		"dbs_" + strings.Repeat("A1_-", 10) + "xyz": "Source access token",
 	} {
 		if _, err := ParseToken(input); err == nil || !strings.Contains(err.Error(), want) {
 			t.Errorf("%q: got %v, want %q", input, err, want)

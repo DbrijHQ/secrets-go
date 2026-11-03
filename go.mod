@@ -1,3 +1,3 @@
-module github.com/SAW-TECHNOLOGIES-LIMITED/Dbrij/packages/secrets-go
+module github.com/DbrijHQ/secrets-go
 
 go 1.24

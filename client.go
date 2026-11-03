@@ -38,6 +38,11 @@ const (
 	defaultAudience = "https://secrets.dbrij.com"
 	// Version is this SDK's version.
 	Version = "0.1.0"
+	// NoFailSoft, as Options.FailSoft, turns failing soft off: a Load or Refresh that cannot
+	// reach Dbrij returns the error at once. (Zero means one hour, because an Options left
+	// empty has to mean the default. Node's failSoftMs: 0 and Python's fail_soft_seconds=0
+	// turn it off; in Go, use NoFailSoft or any negative duration.)
+	NoFailSoft time.Duration = -1
 )
 
 // Error is what every call returns when Dbrij refuses or cannot be reached.
@@ -70,7 +75,8 @@ type Options struct {
 	// BaseURL defaults to DBRIJ_API_URL, then DefaultBaseURL.
 	BaseURL string
 	// FailSoft is how long the last good copy is served while Dbrij cannot be reached.
-	// Zero means one hour; a negative value turns it off.
+	// Zero means one hour; NoFailSoft (or any negative value) turns it off. This differs
+	// from Node, where failSoftMs: 0 turns it off.
 	FailSoft time.Duration
 	// Timeout is per request. Zero means ten seconds.
 	Timeout time.Duration

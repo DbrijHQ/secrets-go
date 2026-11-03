@@ -25,6 +25,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"regexp"
 	"strings"
 )
 
@@ -106,9 +107,33 @@ func isLowerHex(s string) bool {
 	return true
 }
 
+var (
+	storageKeyID      = regexp.MustCompile(`^dbsk_[0-9a-f]{24}$`)
+	storageSecret     = regexp.MustCompile(`^dbss_[0-9a-f]+$`)
+	sourceAccessToken = regexp.MustCompile(`^dbs_[A-Za-z0-9_-]{43}$`)
+)
+
+// otherDbrijKey names another Dbrij key that shares a prefix with these: a Storage access
+// key ID is also dbsk_ (24 hex characters, nothing after them), a Storage secret key is
+// dbss_, and a Source access token is dbs_ with 43 characters. "" when it is none of them.
+func otherDbrijKey(text string) string {
+	switch {
+	case storageKeyID.MatchString(text):
+		return "that is a Dbrij Storage access key ID, not a Secrets login key. Copy the token or key Dbrij Secrets showed when the machine was made"
+	case storageSecret.MatchString(text):
+		return "that is a Dbrij Storage secret key, not a Secrets token. Copy the token or key Dbrij Secrets showed when the machine was made"
+	case sourceAccessToken.MatchString(text):
+		return "that looks like a Dbrij Source access token, not a Secrets machine token. Copy the token Dbrij Secrets showed when the machine was made"
+	}
+	return ""
+}
+
 // ParseToken reads a machine token or login key, or says what is wrong with it.
 func ParseToken(text string) (*Token, error) {
 	text = strings.TrimSpace(text)
+	if other := otherDbrijKey(text); other != "" {
+		return nil, errors.New(other)
+	}
 	isKey := strings.HasPrefix(text, keyPrefix)
 	if !isKey && !strings.HasPrefix(text, tokenPrefix) {
 		return nil, errors.New("that is not a Dbrij Secrets token. Tokens start with dbs_ (or dbsk_ for a login key)")

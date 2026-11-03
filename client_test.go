@@ -276,6 +276,22 @@ func TestFailsSoftWhileUnreachableButNeverThroughARefusal(t *testing.T) {
 	}
 }
 
+func TestNoFailSoftTurnsItOffAndZeroMeansAnHour(t *testing.T) {
+	api, srv, f := newFakeAPI(t)
+	ctx := context.Background()
+	if c := clientFor(t, srv, f.Token, Options{}); c.failSoft != time.Hour {
+		t.Fatalf("zero must mean one hour, got %v", c.failSoft)
+	}
+	c := clientFor(t, srv, f.Token, Options{FailSoft: NoFailSoft})
+	if _, err := c.Load(ctx); err != nil {
+		t.Fatal(err)
+	}
+	api.down = true
+	if _, err := c.Refresh(ctx); err == nil {
+		t.Fatal("with NoFailSoft, unreachable is an error at once")
+	}
+}
+
 func TestSavesSealedValuesAndRetriesOnceWhenAnotherSaveLanded(t *testing.T) {
 	api, srv, f := newFakeAPI(t)
 	ctx := context.Background()
